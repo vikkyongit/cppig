@@ -1,32 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
 
+#include<stdio.h>
 int main()
 {
-   while(1)
-   {
-
-       int n;
-    float Old, New;
-    float intrest;
-
-    printf("enter the value of day \n");
-    scanf("%d",&n);
-      printf("enter the value of Old \n");
-    scanf("%f",&Old);
-      printf("enter the value of intrest \n");
-    scanf("%f",&intrest);
-    int i;
-
-    for(i=1;i<=n;i++)
+    char c;
+    printf("enter a alphabet \n\n");
+    scanf("%c",&c);
+    printf("ASCII value of char is %d \n and char of c is %c \n\n",c,c);
+    if(c=='a' || c=='e' || c=='i'|| c=='o' || c=='u')
     {
-     New = Old + ( Old*(intrest/1000));
-     Old = New;
-
+        printf("%c is a vowel\n\n",c);
     }
-    printf(" New is %f \n ", New);
-   }
-
-
-    return 0;
+    else
+    {
+        printf("%c is consnent\n\n",c);
+    }
 }
+
+
+
