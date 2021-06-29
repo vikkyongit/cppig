@@ -1,8 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
 
 int main()
 {
-    printf("Hello world!\n");
-    return 0;
+    int n;
+    printf("enter a number between 0 to 100\n");
+    scanf("%d",&n);
+    printf("the value of the n is %d \n",n);
+
 }
